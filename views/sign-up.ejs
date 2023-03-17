@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/sign-up-style.css">
+    </head>
+    <body>
+        <div class="sign-up-container">
+            <h1>Sign Up</h1>
+            <form action="/users/create" method="POST" class="sign-up-form">
+                <input type="text" placeholder="Enter your name" name="username"><input name="email" type="email" placeholder="Enter your email"><input name="password" type="password" placeholder="Enter your password"><input name="confirm_password" type="password" placeholder="Confirm Password">
+                <button id="submit-button">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>

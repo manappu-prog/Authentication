@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/sign-in-style.css">
+</head>
+
+<body>
+    
+    <div class="login-container">
+        <h1>Login</h1>
+        <form method="POST" action="/users/create-session" class="login-form">
+
+            <label for="name">Username</label>
+            <input type="text" id="name" name="username" placeholder="Type your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Type your password" autocomplete="on">
+            <button id="submit-button">LOGIN</button>
+        </form>
+    </div>
+</body>
+
+</html>
